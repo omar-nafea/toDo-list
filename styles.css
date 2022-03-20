@@ -1,0 +1,213 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-image: url("https://mostaql.hsoubcdn.com/uploads/634670-AGO8e-1579178178-5e2058c21f3d2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.form {
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 60px auto;
+    padding: 10px;
+    transform: translateY(50px);
+}
+
+input[type=text] {
+    width: 77%;
+    padding: 10px 15px;
+    display: block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.add {
+    background-color: tomato;
+    width: 22%;
+    color: white;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tasks {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+    border-radius: 5px;
+    margin: 20px auto;
+    transform: translateY(50px);
+    padding: 15px 15px 0;
+    box-sizing: border-box;
+}
+
+.min-con {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 15px;
+}
+
+.tasks .min-con .output {
+    background-color: #fff;
+    width: 75%;
+    padding: 10px 10px;
+    display: block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tasks .min-con .delete {
+    background-color: red;
+    width: 10%;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+h1 {
+    visibility: hidden;
+}
+
+@media (max-width: 1450px) {
+    .form {
+        background-color: #ddd;
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        height: 40px;
+        transform: translateY(120px);
+        border-radius: 5px;
+        margin: 20px auto;
+        padding: 15px;
+    }
+    .tasks {
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 60%;
+        border-radius: 5px;
+        margin: 20px auto;
+        transform: translateY(150px);
+        padding: 15px 15px 0;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width:755px) and (max-width:1200px) {
+    .form {
+        background-color: #ddd;
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        height: 40px;
+        border-radius: 5px;
+        margin: 20px auto;
+        padding: 15px;
+        transform: translateY(-30px);
+    }
+    .tasks {
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 90%;
+        border-radius: 5px;
+        transform: translateY(100px);
+        margin: 20px auto;
+        padding: 15px 10px 0;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width:355px) and (max-width: 750px) {
+    .form {
+        background-color: #ddd;
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        height: 40px;
+        border-radius: 5px;
+        margin: 20px auto;
+        padding: 15px;
+        transform: translateY(40px);
+    }
+    input[type=text] {
+        width: 72%;
+        padding: 10px 15px;
+        display: block;
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .add {
+        background-color: tomato;
+        width: 25%;
+        color: white;
+        box-sizing: border-box;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .tasks {
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 90%;
+        border-radius: 5px;
+        transform: translateY(100px);
+        margin: 20px auto;
+        padding: 15px 10px 0;
+        box-sizing: border-box;
+    }
+    .tasks .min-con .output {
+        background-color: #fff;
+        width: 68%;
+        padding: 10px 10px;
+        display: block;
+        border: none;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .tasks .min-con .delete {
+        background-color: red;
+        width: 17%;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}
+
+.tasks .min-con .editing {
+    background-color: rgb(19, 71, 184);
+    width: 12%;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
